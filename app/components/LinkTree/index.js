@@ -19,6 +19,9 @@ import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
 
 // Other Logos for links
 const kickLogo = require('../../images/kick.svg');
+const discordLogo = require('../../images/discord.svg');
+const mediumLogo = require('../../images/medium.svg');
+const twitterLogo = require('../../images/twitter.svg');
 // import ArticleIcon from '@mui/icons-material/Article';
 // const instagramLogo = require('../../images/instagram.svg');
 // const linkedinLogo = require('../../images/linkedin-in.svg');
@@ -32,12 +35,14 @@ export default function LinkTree() {
     <>
       <Container>
         <Header picture='https://avatars.githubusercontent.com/u/29899042?v=4' title='Jonathan Gan' subtitle='Software Engineer & Investor.' />
-        <Button link='https://kick.com/jonngan' icon={<Image src={kickLogo} alt="Discord Logo" />} name='' backgroundColor={variables.discordColor} />
-        <Button link='https://expo.dev/@jongan69' icon={<AppsIcon />} name=' Mobile Apps' backgroundColor={variables.twitterColor} />
-        <Button link='https://github.com/jongan69' icon={<GitHubIcon />} name='Github' backgroundColor={variables.githubColor} />
-        <Button link='https://docs.google.com/document/d/1euLUOVIyY6zYMQ2dA6sXCq0qt7qhCNT5zu-c7GzX0s0/edit?usp=sharing' icon={<AssignmentIndIcon />} name=' Resume' backgroundColor={variables.whatsappColor} />
-        <Button link='https://share.public.com/jonngan' icon={<PieChartIcon />} name='Public' backgroundColor={variables.twitterColor} />
+        <Button link='https://kick.com/jonngan' icon={<Image src={kickLogo} alt="Kick" />} name='' backgroundColor={variables.opt1Color} />
+        <Button link='https://discord.gg/8ThxdFtFC7' icon={<Image src={discordLogo} alt="Discord"/>} name='Discord' backgroundColor={variables.discordColor} />
+        <Button link='https://jonngan.medium.com' icon={<Image src={mediumLogo} alt="Medium"/>} name='' backgroundColor={variables.opt2Color} />
         <Button link='https://www.youtube.com/@jonngan?sub_confirmation=1' icon={<PlayCircleFilledWhiteIcon />} name='Youtube' backgroundColor={variables.blogColor} />
+        <Button link='https://docs.google.com/document/d/1euLUOVIyY6zYMQ2dA6sXCq0qt7qhCNT5zu-c7GzX0s0/edit?usp=sharing' icon={<AssignmentIndIcon />} name=' Resume' backgroundColor={variables.whatsappColor} />
+        <Button link='https://github.com/jongan69' icon={<GitHubIcon />} name='Github' backgroundColor={variables.githubColor} />
+        <Button link='https://twitter.com/jongan69' icon={<Image src={twitterLogo} alt="Twitter" height={20}/>} name='' backgroundColor={variables.twitterColor} />
+        {/* <Button link='https://share.public.com/jonngan' icon={<PieChartIcon />} name='Public' backgroundColor={variables.twitterColor} /> */}
       </Container>
       <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}>
         <Canvas>

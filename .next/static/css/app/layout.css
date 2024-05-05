@@ -569,9 +569,6 @@ video {
 .fixed {
   position: fixed;
 }
-.relative {
-  position: relative;
-}
 .flex {
   display: flex;
 }
