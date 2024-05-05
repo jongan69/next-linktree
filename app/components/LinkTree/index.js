@@ -1,10 +1,14 @@
-import React from 'react';
+"use client"
+import React, { useMemo } from 'react';
 import { Container } from './styles';
 import Image from 'next/image'
-import Button from '../Button';
+import Button from '../Button/index.js';
 import variables from '../../variables';
 import Header from '../Header';
-import ParticlesBg from 'particles-bg'
+
+// Money
+import { Canvas } from '@react-three/fiber';
+import RainingMoneyBackground from '../Three/RainingMoney'
 
 // Logos
 import AppsIcon from '@material-ui/icons/Apps';
@@ -23,42 +27,23 @@ const kickLogo = require('../../images/kick.svg');
 
 
 export default function LinkTree() {
-  let config = {
-    num: [4, 7],
-    rps: 0.1,
-    radius: [5, 40],
-    life: [1.5, 3],
-    v: [2, 3],
-    tha: [-40, 40],
-    // body: "./img/icon.png", // Whether to render pictures
-    // rotate: [0, 20],
-    alpha: [0.6, 0],
-    scale: [1, 0.1],
-    position: "center", // all or center or {x:1,y:1,width:100,height:100}
-    color: ["random", "#ff0000"],
-    cross: "dead", // cross or bround
-    random: 15,  // or null,
-    g: 5,    // gravity
-    // f: [2, -1], // force
-    onParticleUpdate: (ctx, particle) => {
-      ctx.beginPath();
-      ctx.rect(particle.p.x, particle.p.y, particle.radius * 2, particle.radius * 2);
-      ctx.fillStyle = particle.color;
-      ctx.fill();
-      ctx.closePath();
-    }
-  };
 
   return (
-    <Container>
-      <Header picture='https://avatars.githubusercontent.com/u/29899042?v=4' title='Jonathan Gan' subtitle='Software Engineer & Investor.' />
-      <Button link='https://kick.com/jonngan' icon={<Image src={kickLogo} alt="Discord Logo"/>} name='' backgroundColor={variables.discordColor} />
-      <Button link='https://expo.dev/@jongan69' icon={<AppsIcon />} name=' Mobile Apps' backgroundColor={variables.twitterColor} />
-      <Button link='https://github.com/jongan69' icon={<GitHubIcon />} name='Github' backgroundColor={variables.githubColor} />
-      <Button link='https://docs.google.com/document/d/1euLUOVIyY6zYMQ2dA6sXCq0qt7qhCNT5zu-c7GzX0s0/edit?usp=sharing' icon={<AssignmentIndIcon />} name=' Resume' backgroundColor={variables.whatsappColor} />
-      <Button link='https://share.public.com/jonngan' icon={<PieChartIcon />} name='Public' backgroundColor={variables.twitterColor} />
-      <Button link='https://www.youtube.com/@jonngan?sub_confirmation=1' icon={<PlayCircleFilledWhiteIcon />} name='Youtube' backgroundColor={variables.blogColor} />
-      <ParticlesBg type="random" config={config} bg={true} />
-    </Container>
+    <>
+      <Container>
+        <Header picture='https://avatars.githubusercontent.com/u/29899042?v=4' title='Jonathan Gan' subtitle='Software Engineer & Investor.' />
+        <Button link='https://kick.com/jonngan' icon={<Image src={kickLogo} alt="Discord Logo" />} name='' backgroundColor={variables.discordColor} />
+        <Button link='https://expo.dev/@jongan69' icon={<AppsIcon />} name=' Mobile Apps' backgroundColor={variables.twitterColor} />
+        <Button link='https://github.com/jongan69' icon={<GitHubIcon />} name='Github' backgroundColor={variables.githubColor} />
+        <Button link='https://docs.google.com/document/d/1euLUOVIyY6zYMQ2dA6sXCq0qt7qhCNT5zu-c7GzX0s0/edit?usp=sharing' icon={<AssignmentIndIcon />} name=' Resume' backgroundColor={variables.whatsappColor} />
+        <Button link='https://share.public.com/jonngan' icon={<PieChartIcon />} name='Public' backgroundColor={variables.twitterColor} />
+        <Button link='https://www.youtube.com/@jonngan?sub_confirmation=1' icon={<PlayCircleFilledWhiteIcon />} name='Youtube' backgroundColor={variables.blogColor} />
+      </Container>
+      <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}>
+        <Canvas>
+          <RainingMoneyBackground />
+        </Canvas>
+      </div>
+    </>
   )
 }
