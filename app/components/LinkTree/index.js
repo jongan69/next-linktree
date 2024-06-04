@@ -1,5 +1,5 @@
 "use client"
-import React, { useMemo } from 'react';
+import React from 'react';
 import { Container } from './styles';
 import Image from 'next/image'
 import Button from '../Button/index.js';
@@ -11,17 +11,19 @@ import { Canvas } from '@react-three/fiber';
 import RainingMoneyBackground from '../Three/RainingMoney'
 
 // Logos
-import AppsIcon from '@material-ui/icons/Apps';
-import PieChartIcon from '@mui/icons-material/PieChart';
+// import AppsIcon from '@material-ui/icons/Apps';
+// import PieChartIcon from '@mui/icons-material/PieChart';
 import PlayCircleFilledWhiteIcon from '@mui/icons-material/PlayCircleFilledWhite';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
 
 // Other Logos for links
 const kickLogo = require('../../images/kick.svg');
-const discordLogo = require('../../images/discord.svg');
 const mediumLogo = require('../../images/medium.svg');
 const twitterLogo = require('../../images/twitter.svg');
+const telegramLogo = require('../../images/telegram.svg');
+
+// const discordLogo = require('../../images/discord.svg');
 // import ArticleIcon from '@mui/icons-material/Article';
 // const instagramLogo = require('../../images/instagram.svg');
 // const linkedinLogo = require('../../images/linkedin-in.svg');
@@ -36,7 +38,7 @@ export default function LinkTree() {
       <Container>
         <Header picture='https://avatars.githubusercontent.com/u/29899042?v=4' title='Jonathan Gan' subtitle='Software Engineer & Investor.' />
         <Button link='https://kick.com/jonngan' icon={<Image src={kickLogo} alt="Kick" />} name='' backgroundColor={variables.opt1Color} />
-        <Button link='https://discord.gg/8ThxdFtFC7' icon={<Image src={discordLogo} alt="Discord"/>} name='Discord' backgroundColor={variables.discordColor} />
+        <Button link='https://t.me/jonngan' icon={<Image src={telegramLogo} alt="Telegram"/>} name='Telegram' backgroundColor={variables.opt1Color} />
         <Button link='https://jonngan.medium.com' icon={<Image src={mediumLogo} alt="Medium"/>} name='' backgroundColor={variables.opt2Color} />
         <Button link='https://www.youtube.com/@jonngan?sub_confirmation=1' icon={<PlayCircleFilledWhiteIcon />} name='Youtube' backgroundColor={variables.blogColor} />
         <Button link='https://docs.google.com/document/d/1euLUOVIyY6zYMQ2dA6sXCq0qt7qhCNT5zu-c7GzX0s0/edit?usp=sharing' icon={<AssignmentIndIcon />} name=' Resume' backgroundColor={variables.whatsappColor} />
