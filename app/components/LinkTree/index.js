@@ -10,6 +10,9 @@ import Header from '../Header';
 import { Canvas } from '@react-three/fiber';
 import RainingMoneyBackground from '../Three/RainingMoney'
 
+// Profile
+// import Profile from '../../images/profile.jpg';
+
 // Logos
 // import AppsIcon from '@material-ui/icons/Apps';
 import PieChartIcon from '@mui/icons-material/PieChart';
@@ -40,7 +43,7 @@ export default function LinkTree() {
   return (
     <Suspense fallback={<Loading />}>
       <Container>
-        <Header picture='https://avatars.githubusercontent.com/u/29899042?v=4' title='Jonathan Gan' subtitle='Software Engineer & Investor.' />
+        <Header picture="profile.jpg" title='Jonathan Gan' subtitle='Software Engineer & Investor.' />
         <Button link='https://kick.com/jonngan' icon={<Image src={kickLogo} alt="Kick" />} name='' backgroundColor={variables.opt1Color} />
         <Button link='https://t.me/jonngan' icon={<Image src={telegramLogo} alt="Telegram"/>} name='Telegram' backgroundColor={variables.opt1Color} />
         <Button link='https://jonngan.medium.com' icon={<Image src={mediumLogo} alt="Medium"/>} name='' backgroundColor={variables.opt2Color} />
