@@ -12,10 +12,10 @@ import './styles.css'
 
 
 
-export default function Button({ icon, name, backgroundColor, link }) {
+export default function Button({ icon, name, backgroundcolor, link }) {
   return (
-    <Container backgroundColor={backgroundColor} href={link} target='_blank'>
-      <div class="rainbowIcon" style={{ padding: 10 }}>{icon}</div>     
+    <Container backgroundcolor={backgroundcolor ?? 'black'} href={link} target='_blank'>
+      <div className="rainbowIcon" style={{ padding: 10 }}>{icon}</div>     
       <Name>{name}</Name>
     </Container>
   );

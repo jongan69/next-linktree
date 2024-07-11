@@ -25,6 +25,7 @@ export const Title = styled.h1`
 `
 
 export const Subtitle = styled.p`
+  padding-top: 20px;
   font-size: 1em;
   font-family: tahoma;
   text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.1em white;
