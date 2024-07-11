@@ -46,9 +46,9 @@ export default function LinkTree() {
         <Button link='https://t.me/jonngan' icon={<Image src={telegramLogo} alt="Telegram"/>} name='Telegram' backgroundcolor={variables.opt1Color} />
         <Button link='https://jonngan.medium.com' icon={<Image src={mediumLogo} alt="Medium"/>} name='' backgroundcolor={variables.opt2Color} />
         <Button link='https://www.youtube.com/@jonngan?sub_confirmation=1' icon={<PlayCircleFilledWhiteIcon />} name='Youtube' backgroundcolor={variables.blogColor} />
-        <Button link='https://docs.google.com/document/d/1euLUOVIyY6zYMQ2dA6sXCq0qt7qhCNT5zu-c7GzX0s0/edit?usp=sharing' icon={<AssignmentIndIcon />} name=' Resume' backgroundcolor={variables.whatsappColor} />
-        <Button link='https://github.com/jongan69' icon={<GitHubIcon />} name='Github' backgroundcolor={variables.githubColor} />
         <Button link='https://promote.ourbit.com/a/Jonngan' icon={<PieChartIcon />} name='Ourbit' backgroundcolor={variables.whatsappColor} />
+        {/* <Button link='https://docs.google.com/document/d/1euLUOVIyY6zYMQ2dA6sXCq0qt7qhCNT5zu-c7GzX0s0/edit?usp=sharing' icon={<AssignmentIndIcon />} name=' Resume' backgroundcolor={variables.whatsappColor} /> */}
+        <Button link='https://github.com/jongan69' icon={<GitHubIcon />} name='Github' backgroundcolor={variables.githubColor} />
         <Button link='https://t.me/BullxBetaBot?start=access_GX6U7KNHAJW' icon={<Image src={trading} alt="Bullx" height={20}/>} name='Bullx' backgroundcolor={variables.whatsappColor} />
         <Button link='https://twitter.com/jongan69' icon={<Image src={twitterLogo} alt="Twitter" height={20}/>} name='' backgroundcolor={variables.twitterColor} />
       </Container>
