@@ -10,9 +10,6 @@ import Header from '../Header';
 import { Canvas } from '@react-three/fiber';
 import RainingMoneyBackground from '../Three/RainingMoney'
 
-// Profile
-// import Profile from '../../images/profile.jpg';
-
 // Logos
 // import AppsIcon from '@material-ui/icons/Apps';
 import PieChartIcon from '@mui/icons-material/PieChart';
@@ -21,6 +18,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
 
 // Other Logos for links
+const trading = require('../../images/trade.svg');
 const kickLogo = require('../../images/kick.svg');
 const mediumLogo = require('../../images/medium.svg');
 const twitterLogo = require('../../images/twitter.svg');
@@ -50,8 +48,9 @@ export default function LinkTree() {
         <Button link='https://www.youtube.com/@jonngan?sub_confirmation=1' icon={<PlayCircleFilledWhiteIcon />} name='Youtube' backgroundColor={variables.blogColor} />
         <Button link='https://docs.google.com/document/d/1euLUOVIyY6zYMQ2dA6sXCq0qt7qhCNT5zu-c7GzX0s0/edit?usp=sharing' icon={<AssignmentIndIcon />} name=' Resume' backgroundColor={variables.whatsappColor} />
         <Button link='https://github.com/jongan69' icon={<GitHubIcon />} name='Github' backgroundColor={variables.githubColor} />
-        <Button link='https://twitter.com/jongan69' icon={<Image src={twitterLogo} alt="Twitter" height={20}/>} name='' backgroundColor={variables.twitterColor} />
         <Button link='https://promote.ourbit.com/a/Jonngan' icon={<PieChartIcon />} name='Ourbit' backgroundColor={variables.whatsappColor} />
+        <Button link='https://t.me/BullxBetaBot?start=access_GX6U7KNHAJW' icon={<Image src={trading} alt="Bullx" height={20}/>} name='Bullx' backgroundColor={variables.whatsappColor} />
+        <Button link='https://twitter.com/jongan69' icon={<Image src={twitterLogo} alt="Twitter" height={20}/>} name='' backgroundColor={variables.twitterColor} />
       </Container>
       <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}>
         <Canvas>
