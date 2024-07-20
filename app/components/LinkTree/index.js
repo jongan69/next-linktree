@@ -23,7 +23,7 @@ const kickLogo = require('../../images/kick.svg');
 const mediumLogo = require('../../images/medium.svg');
 const twitterLogo = require('../../images/twitter.svg');
 const telegramLogo = require('../../images/telegram.svg');
-
+const lockLogo = require('../../images/logo.svg');
 // const discordLogo = require('../../images/discord.svg');
 // import ArticleIcon from '@mui/icons-material/Article';
 // const instagramLogo = require('../../images/instagram.svg');
@@ -46,6 +46,7 @@ export default function LinkTree() {
         <Button link='https://t.me/jonngan' icon={<Image src={telegramLogo} alt="Telegram"/>} name='Telegram' backgroundcolor={variables.opt1Color} />
         <Button link='https://jonngan.medium.com' icon={<Image src={mediumLogo} alt="Medium"/>} name='' backgroundcolor={variables.opt2Color} />
         <Button link='https://www.youtube.com/@jonngan?sub_confirmation=1' icon={<PlayCircleFilledWhiteIcon />} name='Youtube' backgroundcolor={variables.blogColor} />
+        <Button link='https://www.lock.wtf/' icon={<Image src={lockLogo} height={80} alt="Lock.wtf"/>} name='Lock.wtf' backgroundcolor={variables.linkedinColor}/>
         <Button link='https://promote.ourbit.com/a/Jonngan' icon={<PieChartIcon />} name='Ourbit' backgroundcolor={variables.whatsappColor} />
         {/* <Button link='https://docs.google.com/document/d/1euLUOVIyY6zYMQ2dA6sXCq0qt7qhCNT5zu-c7GzX0s0/edit?usp=sharing' icon={<AssignmentIndIcon />} name=' Resume' backgroundcolor={variables.whatsappColor} /> */}
         <Button link='https://github.com/jongan69' icon={<GitHubIcon />} name='Github' backgroundcolor={variables.githubColor} />
