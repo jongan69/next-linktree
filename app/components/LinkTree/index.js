@@ -51,11 +51,14 @@ export default function LinkTree() {
         <Button link='https://t.me/jonngan' icon={<Image src={telegramLogo} height={h} alt="Telegram"/>} name='' backgroundcolor={variables.opt1Color} />
         <Button link='https://kick.com/jonngan' icon={<Image src={kickLogo} height={h} alt="Kick" />} name='' backgroundcolor={variables.opt1Color} />
         {/* Anything below here is shill */}
+
         <Button link='https://www.lock.wtf/' icon={<Image src={lockLogo} height={h} alt="Lock.wtf"/>} name='Lock.wtf' backgroundcolor={variables.linkedinColor}/>
         <Button link='https://moonshot.money?ref=vtsmoh24uf' icon={<Image src={moonLogo} height={h} alt="MoonShot"/>} name='Moonshot' backgroundcolor={variables.pink} />
         <Button link='https://promote.ourbit.com/a/Jonngan' icon={<PieChartIcon />} name='Ourbit' backgroundcolor={variables.whatsappColor} />
         <Button link='https://ox.fun/register?shareAccountId=5MU57aDG' icon={<AssignmentIndIcon />} name='OX.FUN' backgroundcolor={variables.purple} />
         <Button link='https://t.me/BullxBetaBot?start=access_GX6U7KNHAJW' icon={<Image src={trading} alt="Bullx" height={h}/>} name='Bullx' backgroundcolor={variables.whatsappColor} />
+        <Button link='https://app.prerich.com/ref/37760CGO' icon={<Image src={trading} alt="PreRich" height={h}/>} name='Prerich' backgroundcolor={variables.discordColor} />
+
       </Container>
       <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}>
         <Canvas>
