@@ -25,6 +25,8 @@ const twitterLogo = require('../../images/twitter.svg');
 const telegramLogo = require('../../images/telegram.svg');
 const lockLogo = require('../../images/logo.svg');
 const moonLogo = require('../../images/moon.svg');
+const gambleLogo = require('../../images/gamble.svg');
+const ourbit = require('../../images/ourbit.svg');
 // const discordLogo = require('../../images/discord.svg');
 // import ArticleIcon from '@mui/icons-material/Article';
 // const instagramLogo = require('../../images/instagram.svg');
@@ -54,11 +56,14 @@ export default function LinkTree() {
 
         <Button link='https://www.lock.wtf/' icon={<Image src={lockLogo} height={h} alt="Lock.wtf"/>} name='Lock.wtf' backgroundcolor={variables.linkedinColor}/>
         <Button link='https://moonshot.money?ref=vtsmoh24uf' icon={<Image src={moonLogo} height={h} alt="MoonShot"/>} name='Moonshot' backgroundcolor={variables.pink} />
-        <Button link='https://promote.ourbit.com/a/Jonngan' icon={<PieChartIcon />} name='Ourbit' backgroundcolor={variables.whatsappColor} />
-        <Button link='https://ox.fun/register?shareAccountId=5MU57aDG' icon={<AssignmentIndIcon />} name='OX.FUN' backgroundcolor={variables.purple} />
-        <Button link='https://t.me/BullxBetaBot?start=access_GX6U7KNHAJW' icon={<Image src={trading} alt="Bullx" height={h}/>} name='Bullx' backgroundcolor={variables.whatsappColor} />
-        <Button link='https://app.prerich.com/ref/37760CGO' icon={<Image src={trading} alt="PreRich" height={h}/>} name='Prerich' backgroundcolor={variables.discordColor} />
+        <Button link='https://promote.ourbit.com/a/Jonngan' icon={<Image src={ourbit} alt="Ourbit" height={h}/>} backgroundcolor={variables.opt2Color} />
+        <Button link='https://ox.fun/register?shareAccountId=5MU57aDG' icon={<Image src={trading} alt="OX.FUN" height={h}/>} name='OX.FUN' backgroundcolor={variables.discordColor} />
+        <Button link='https://partner.toshi.bet/jongan' icon={<Image src={gambleLogo} alt="Toshi Bets" height={h}/>} name='Toshi Bets' backgroundcolor={variables.opt2Color} />
 
+        {/* <Button link='https://t.me/BullxBetaBot?start=access_GX6U7KNHAJW' icon={<Image src={trading} alt="Bullx" height={h}/>} name='Bullx' backgroundcolor={variables.whatsappColor} /> */}
+        {/* <Button link='https://app.prerich.com/ref/37760CGO' icon={<Image src={trading} alt="PreRich" height={h}/>} name='Prerich' backgroundcolor={variables.discordColor} /> */}
+
+        
       </Container>
       <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}>
         <Canvas>

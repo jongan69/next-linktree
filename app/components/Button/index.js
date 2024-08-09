@@ -13,6 +13,7 @@ import './styles.css'
 
 
 export default function Button({ icon, name, backgroundcolor, link }) {
+  // const textColor = backgroundcolor === '#fff' ? 'black' : 'black';
   return (
     <Container backgroundcolor={backgroundcolor ?? 'black'} href={link} target='_blank'>
       <div className="rainbowIcon" style={{ padding: 10 }}>{icon}</div>     

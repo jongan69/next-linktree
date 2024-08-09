@@ -1,5 +1,5 @@
 export default {
-  textColor: '#fff',
+  textColor: '#000',
   facebookColor: '#4267B2',
   instagramColor: '#C13584',
   red: '#FF0000',
