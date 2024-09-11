@@ -18,7 +18,7 @@ This project is a customizable LinkTree-like application built with Next.js. It 
 
 ## Demo
 
-[Link to live demo](#)
+[Link to live demo](https://jongan.com)
 
 ## Getting Started
 
