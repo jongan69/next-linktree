@@ -1,6 +1,6 @@
 "use client"
 import React, { Suspense } from 'react';
-import { Container } from './styles';
+import { Container, Section, SectionHeader } from './styles';
 import Image from 'next/image'
 import Button from '../Button/index.js';
 import variables from '../../variables';
@@ -11,11 +11,8 @@ import { Canvas } from '@react-three/fiber';
 import RainingMoneyBackground from '../Three/RainingMoney'
 
 // Logos
-// import AppsIcon from '@material-ui/icons/Apps';
-import PieChartIcon from '@mui/icons-material/PieChart';
 import PlayCircleFilledWhiteIcon from '@mui/icons-material/PlayCircleFilledWhite';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
 
 // Other Logos for links
 const trading = require('../../images/trade.svg');
@@ -23,17 +20,11 @@ const kickLogo = require('../../images/kick.svg');
 const mediumLogo = require('../../images/medium.svg');
 const twitterLogo = require('../../images/twitter.svg');
 const telegramLogo = require('../../images/telegram.svg');
+const gambleLogo = require('../../images/gamble.svg');
+
 const lockLogo = require('../../images/logo.svg');
 const moonLogo = require('../../images/moon.svg');
-const gambleLogo = require('../../images/gamble.svg');
-const ourbit = require('../../images/ourbit.svg');
-// const discordLogo = require('../../images/discord.svg');
-// import ArticleIcon from '@mui/icons-material/Article';
-// const instagramLogo = require('../../images/instagram.svg');
-// const linkedinLogo = require('../../images/linkedin-in.svg');
-// const tiktokLogo = require('../../images/tiktok.svg');
-// const whatsappLogo = require('../../images/whatsapp.svg');
-
+const groundfloor = require('../../images/house.svg');
 
 export default function LinkTree() {
 
@@ -52,18 +43,16 @@ export default function LinkTree() {
         <Button link='https://twitter.com/jongan69' icon={<Image src={twitterLogo} alt="Twitter" height={h}/>} name='' backgroundcolor={variables.twitterColor} />
         <Button link='https://t.me/jonngan' icon={<Image src={telegramLogo} height={h} alt="Telegram"/>} name='' backgroundcolor={variables.opt1Color} />
         <Button link='https://kick.com/jonngan' icon={<Image src={kickLogo} height={h} alt="Kick" />} name='' backgroundcolor={variables.opt1Color} />
-        {/* Anything below here is shill */}
-
-        <Button link='https://www.lock.wtf/' icon={<Image src={lockLogo} height={h} alt="Lock.wtf"/>} name='Lock.wtf' backgroundcolor={variables.linkedinColor}/>
-        <Button link='https://moonshot.money?ref=vtsmoh24uf' icon={<Image src={moonLogo} height={h} alt="MoonShot"/>} name='Moonshot' backgroundcolor={variables.pink} />
-        <Button link='https://promote.ourbit.com/a/Jonngan' icon={<Image src={ourbit} alt="Ourbit" height={h}/>} backgroundcolor={variables.opt2Color} />
-        <Button link='https://ox.fun/register?shareAccountId=5MU57aDG' icon={<Image src={trading} alt="OX.FUN" height={h}/>} name='OX.FUN' backgroundcolor={variables.discordColor} />
-        <Button link='https://partner.toshi.bet/jongan' icon={<Image src={gambleLogo} alt="Toshi Bets" height={h}/>} name='Toshi Bets' backgroundcolor={variables.opt2Color} />
-
-        {/* <Button link='https://t.me/BullxBetaBot?start=access_GX6U7KNHAJW' icon={<Image src={trading} alt="Bullx" height={h}/>} name='Bullx' backgroundcolor={variables.whatsappColor} /> */}
-        {/* <Button link='https://app.prerich.com/ref/37760CGO' icon={<Image src={trading} alt="PreRich" height={h}/>} name='Prerich' backgroundcolor={variables.discordColor} /> */}
-
         
+        {/* Referral Links Section */}
+        <Section>
+          <SectionHeader>Referral Links</SectionHeader>
+          <Button link='https://www.lock.wtf/' icon={<Image src={lockLogo} height={h} alt="Lock.wtf"/>} name='Lock.wtf' backgroundcolor={variables.linkedinColor}/>
+          <Button link='https://app.groundfloor.us/r/o6d7b4' icon={<Image src={groundfloor} alt="Groundfloor" height={h}/>} name='Groundfloor' backgroundcolor={variables.purple}/>
+          <Button link='https://moonshot.money?ref=vtsmoh24uf' icon={<Image src={moonLogo} height={h} alt="MoonShot"/>} name='Moonshot' backgroundcolor={variables.pink} />
+          <Button link='https://ox.fun/register?shareAccountId=5MU57aDG' icon={<Image src={trading} alt="OX.FUN" height={h}/>} name='OX.FUN' backgroundcolor={variables.discordColor} />
+          <Button link='https://partner.toshi.bet/jongan' icon={<Image src={gambleLogo} alt="Toshi Bets" height={h}/>} name='Toshi Bets' backgroundcolor={variables.opt2Color} />
+        </Section>
       </Container>
       <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}>
         <Canvas>
