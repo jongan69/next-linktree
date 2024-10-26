@@ -51,7 +51,7 @@ export default function LinkTree() {
           <Button link='https://app.groundfloor.us/r/o6d7b4' icon={<Image src={groundfloor} alt="Groundfloor" height={h}/>} name='Groundfloor' backgroundcolor={variables.purple}/>
           <Button link='https://moonshot.money?ref=vtsmoh24uf' icon={<Image src={moonLogo} height={h} alt="MoonShot"/>} name='Moonshot' backgroundcolor={variables.pink} />
           <Button link='https://ox.fun/register?shareAccountId=5MU57aDG' icon={<Image src={trading} alt="OX.FUN" height={h}/>} name='OX.FUN' backgroundcolor={variables.discordColor} />
-          <Button link='https://retardio.casino/?ref=0b27f5d7832c46a4aa829ee7b4777c8e' icon={<Image src={gambleLogo} alt="Retardio Casino" height={h}/>} name='Retardio Casino' backgroundcolor={variables.opt2Color} />
+          <Button link='https://retardio.casino/?ref=jongan69' icon={<Image src={gambleLogo} alt="Retardio Casino" height={h}/>} name='Retardio Casino' backgroundcolor={variables.opt2Color} />
         </Section>
       </Container>
       <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}>
