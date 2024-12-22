@@ -2,33 +2,41 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   align-items: center;
-  display: grid;
-  grid-template-rows: 3fr 1fr 1fr;
-  justify-content: center;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
   width: 100%;
 `;
 
 export const Picture = styled.div`
-  background-image: url( ${ ({ background }) => background});
+  background-image: url(${({ $background }) => $background});
   background-size: cover;
+  background-position: center;
   border-radius: 50%;
-  height: 130px;
-  margin: 0 auto;
-  width: 130px;
+  height: 140px;
+  width: 140px;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 export const Title = styled.h1`
-  font-size: 1.5em;
-  font-family: tahoma;
-  text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.1em white;
-  text-align: center;
-`
+  font-size: 2em;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+`;
 
 export const Subtitle = styled.p`
-  padding-top: 20px;
-  font-size: 1em;
-  font-family: tahoma;
-  text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.1em white;
-  text-align: center;
-`
+  font-size: 1.1em;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+  margin: 0;
+  white-space: pre-line;
+`;

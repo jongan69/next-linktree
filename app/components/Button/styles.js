@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import variables from '../../variables';
 import { lighten } from 'polished';
 
-export const Container = styled.a`
+export const StyledButton = styled.a`
   align-items: center;
-  background: ${ (props) => props.backgroundcolor ? props.backgroundcolor : variables.opt1Color};
+  background-color: ${({ $backgroundcolor }) => $backgroundcolor || variables.opt1Color};
   border-radius: 3px;
   display: flex;
   flex-flow: row;
@@ -14,10 +14,9 @@ export const Container = styled.a`
   width: 100%;
   
   &:hover {
-    background: ${ (props) => lighten('0.1', props.backgroundcolor)};
+    background: ${({ $backgroundcolor }) => lighten(0.1, $backgroundcolor)};
     cursor: pointer;
   }
-}
 `;
 
 export const Icon = styled.div`

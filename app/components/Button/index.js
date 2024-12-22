@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Name } from './styles';
+import { StyledButton, Name } from './styles';
 // import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import './styles.css'
@@ -15,9 +15,9 @@ import './styles.css'
 export default function Button({ icon, name, backgroundcolor, link }) {
   // const textColor = backgroundcolor === '#fff' ? 'black' : 'black';
   return (
-    <Container backgroundcolor={backgroundcolor ?? 'black'} href={link} target='_blank'>
+    <StyledButton $backgroundcolor={backgroundcolor ?? 'black'} href={link} target='_blank'>
       <div className="rainbowIcon" style={{ padding: 10 }}>{icon}</div>     
       <Name>{name}</Name>
-    </Container>
+    </StyledButton>
   );
 }

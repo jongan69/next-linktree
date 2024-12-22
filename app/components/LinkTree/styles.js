@@ -1,19 +1,26 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  margin: 30px auto;
-  max-width: 320px;
-  width: 80%;
+  margin: 40px auto;
+  max-width: var(--max-width);
+  width: 90%;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
 `;
 
 export const Section = styled.div`
-  margin-top: 20px;
-  padding-top: 20px;
-  border-top: 1px solid #ccc;
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 `;
 
 export const SectionHeader = styled.h3`
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   font-size: 1.2em;
-  color: #333;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.5px;
 `;

@@ -47,7 +47,8 @@ export default function LinkTree() {
         {/* Referral Links Section */}
         <Section>
           <SectionHeader>Referral Links</SectionHeader>
-          <Button link='https://www.lock.wtf/' icon={<Image src={lockLogo} height={h} alt="Lock.wtf"/>} name='Lock.wtf' backgroundcolor={variables.linkedinColor}/>
+          <Button link={'https://lotto.cooking/'} icon={<Image src={lockLogo} height={h} alt="Lotto.cooking"/>} name='Lotto.cooking' backgroundcolor={variables.linkedinColor}/>
+          <Button link={'https://www.lock.wtf/'} icon={<Image src={lockLogo} height={h} alt="Lock.wtf"/>} name='Lock.wtf' backgroundcolor={variables.linkedinColor}/>
           <Button link='https://app.groundfloor.us/r/o6d7b4' icon={<Image src={groundfloor} alt="Groundfloor" height={h}/>} name='Groundfloor' backgroundcolor={variables.purple}/>
           <Button link='https://moonshot.money?ref=vtsmoh24uf' icon={<Image src={moonLogo} height={h} alt="MoonShot"/>} name='Moonshot' backgroundcolor={variables.pink} />
           <Button link='https://ox.fun/register?shareAccountId=5MU57aDG' icon={<Image src={trading} alt="OX.FUN" height={h}/>} name='OX.FUN' backgroundcolor={variables.discordColor} />

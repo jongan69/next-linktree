@@ -1,4 +1,4 @@
-// File: /Users/jonathangan/Desktop/Code/Keep/next-linktree/app/layout.tsx
+// File: /Users/jonathangan/Desktop/Code/next-linktree/app/layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
