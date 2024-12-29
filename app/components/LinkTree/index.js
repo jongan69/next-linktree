@@ -52,7 +52,7 @@ export default function LinkTree() {
         {/* Referral Links Section */}
         <Section>
           <SectionHeader>My Projects</SectionHeader>
-          <Button link={'https://Soltrendio.com/'} icon={<Image src={trading} height={h} alt="Solana AI Trend Analysis"/>} name='Solana Wallet Trend Analysis' backgroundcolor={variables.linkedinColor}/>
+          <Button link={'https://Soltrendio.com/'} icon={<Image src={trading} height={h} alt="Solana AI Wallet Analysis"/>} name='Solana AI Wallet Analysis' backgroundcolor={variables.linkedinColor}/>
           <Button link={'https://lotto.cooking/'} icon={<Image src={lottoLogo2} height={h} alt="Solana OnChain VRF Lottery"/>} name='Solana OnChain VRF Lottery' backgroundcolor={variables.linkedinColor}/>
           <Button link={'https://www.lock.wtf/'} icon={<Image src={bundleLogo} height={h} alt="Jito Bundled Jupiter Swaps"/>} name='Jito Bundled Jupiter Swaps' backgroundcolor={variables.linkedinColor}/>
           <Button link={'https://t.me/USDC2BTC_bot'} icon={<Image src={convertLogo} height={h} alt="USDC to BTC Telegram Bot"/>} name='USDC to BTC Telegram Bot' backgroundcolor={variables.linkedinColor}/>
