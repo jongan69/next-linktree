@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap");
+
+.wavy-text {
+  font-family: "Fascinate Inline", sans-serif;
+  font-size: 72px;
+  color: #fff;
+  display: inline-block;
+}
+
+.wavy-text span {
+  display: inline-block;
+  animation: wavyText 1s ease-in-out infinite;
+  transform: translateY(0);
+  transform-origin: center;
+}
+
+.wavy-text span:nth-child(1) { animation-delay: 100ms; }
+.wavy-text span:nth-child(2) { animation-delay: 200ms; }
+.wavy-text span:nth-child(3) { animation-delay: 300ms; }
+.wavy-text span:nth-child(4) { animation-delay: 400ms; }
+.wavy-text span:nth-child(5) { animation-delay: 500ms; }
+.wavy-text span:nth-child(6) { animation-delay: 600ms; }
+.wavy-text span:nth-child(7) { animation-delay: 700ms; }
+.wavy-text span:nth-child(8) { animation-delay: 800ms; }
+.wavy-text span:nth-child(9) { animation-delay: 900ms; }
+.wavy-text span:nth-child(10) { animation-delay: 1000ms; }
+
+@keyframes wavyText {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25%, 50% {
+    transform: translateY(10%);
+  }
+} 

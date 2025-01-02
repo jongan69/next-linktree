@@ -14,9 +14,9 @@ const theme = {
 
 export default function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <LinkTree />
-      <Analytics/>
-    </ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <LinkTree />
+        <Analytics/>
+      </ThemeProvider>
   );
 }

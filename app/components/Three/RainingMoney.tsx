@@ -1,15 +1,28 @@
-import React, { useRef, useMemo } from 'react';
-import { useFrame, useLoader } from '@react-three/fiber';
+import React, { useEffect, useState } from 'react'
+import { useFrame, useLoader } from '@react-three/fiber'
+import { useRef } from 'react';
 import { TextureLoader } from 'three';
 
-// MoneyBill component
-function MoneyBill({ texture }: any) {
+function MoneyBill({ texture }: { texture: any | null }) {
   const mesh = useRef<any>(null);
-  const [x, y, z] = useMemo(() => [Math.random() * 5 - 2.5, Math.random() * 5, Math.random() * 5 - 2.5], []);
-  const rotation = [Math.random() * Math.PI, Math.random() * Math.PI, Math.random() * Math.PI];
+  const [position, setPosition] = useState([0, 0, 0]);
+  const [rotation, setRotation] = useState([0, 0, 0]);
+
+  useEffect(() => {
+    setPosition([
+      Math.random() * 5 - 2.5,
+      Math.random() * 5,
+      Math.random() * 5 - 2.5
+    ]);
+    setRotation([
+      Math.random() * Math.PI,
+      Math.random() * Math.PI,
+      Math.random() * Math.PI
+    ]);
+  }, []);
 
   useFrame(() => {
-    if (mesh && mesh.current) {
+    if (mesh.current) {
       mesh.current.position.y -= 0.02;
       if (mesh.current.position.y < -5) {
         mesh.current.position.y = 5;
@@ -18,17 +31,16 @@ function MoneyBill({ texture }: any) {
   });
 
   return (
-    <mesh ref={mesh} position={[x, y, z]} rotation={rotation}>
+    <mesh ref={mesh} position={position} rotation={rotation}>
       <planeGeometry args={[0.5, 0.25]} />
-      <meshBasicMaterial map={texture} transparent={true} />
+      <meshBasicMaterial args={[{ map: texture, transparent: true }]} />
     </mesh>
   );
 }
 
-// RainingMoneyBackground component
 export default function RainingMoneyBackground() {
-  const moneyTexture = useLoader(TextureLoader, 'moneyTexture.png');
-  const billsCount = 200; // Number of money bills you want to rain
+  const moneyTexture = useLoader(TextureLoader, '/moneyTexture.png');
+  const billsCount = 200;
 
   return (
     <>

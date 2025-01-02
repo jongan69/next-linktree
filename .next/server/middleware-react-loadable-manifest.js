@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}"
+self.__REACT_LOADABLE_MANIFEST='{"app/components/Three/Background.tsx -> ./RainingMoney":{"id":8873,"files":["static/chunks/b536a0f1.b8c7485058b305ee.js","static/chunks/478.ccdfd5dcf5628d8f.js","static/chunks/873.ea5817865a59de4a.js"]},"app/components/Three/Background.tsx -> @react-three/fiber":{"id":7283,"files":["static/chunks/b536a0f1.b8c7485058b305ee.js","static/chunks/478.ccdfd5dcf5628d8f.js","static/chunks/283.c824ad261ddd7314.js"]}}';
