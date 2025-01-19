@@ -37,7 +37,7 @@ export default function LinkTree() {
   return (
     <>
       <Container>
-        <Header picture="profile.jpg" title='Get/Money' subtitle={`\n💻 SWE  \n 💰 Investor \n 🔒 Crypto`} />
+        <Header picture="profile.jpg" title='Get/Money' subtitle={`\n💻 SWE  \n 💰 Investing \n 🔒 Crypto`} />
         <Button link='https://jonngan.medium.com' icon={<Image src={mediumLogo} height={h} alt="Medium" />} name='' backgroundcolor={variables.gray600} />
         <Button link='https://www.youtube.com/@jonngan?sub_confirmation=1' icon={<PlayCircleFilledWhiteIcon />} name='' backgroundcolor={variables.youtubeColor} />
         <Button link='https://github.com/jongan69' icon={<GitHubIcon />} name='' backgroundcolor={variables.githubColor} />
