@@ -22,6 +22,7 @@ import lottoLogo2 from '../../images/lotto2.svg';
 import lockLogo from '../../images/logo.svg';
 import bundleLogo from '../../images/bundle.svg';
 // const swapLogo = require('../../images/swap.svg');
+import swapLogo from '../../images/ia.svg'
 import piLogo from '../../images/redpi.svg';
 import convertLogo from '../../images/bitcoin.svg';
 // const moonLogo = require('../../images/moon.svg');
@@ -48,6 +49,7 @@ export default function LinkTree() {
         {/* Referral Links Section */}
         <Section>
           <SectionHeader>Projects</SectionHeader>
+          <Button link={'https://InvestAssist.app/'} icon={<Image src={swapLogo} height={h} alt="AI Investment Assistance" />} name='AI Market Analysis' backgroundcolor={variables.linkedinColor} />
           <Button link={'https://Soltrendio.com/'} icon={<Image src={trading} height={h} alt="Solana AI Wallet Analysis" />} name='Solana AI Wallet Analysis' backgroundcolor={variables.linkedinColor} />
           <Button link={'https://lotto.cooking/'} icon={<Image src={lottoLogo2} height={h} alt="Solana OnChain VRF Lottery" />} name='Solana OnChain VRF Lottery' backgroundcolor={variables.linkedinColor} />
           <Button link={'https://www.lock.wtf/'} icon={<Image src={bundleLogo} height={h} alt="Jito Bundled Jupiter Swaps" />} name='Jito Bundled Jupiter Swaps' backgroundcolor={variables.linkedinColor} />
