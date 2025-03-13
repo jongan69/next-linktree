@@ -35,6 +35,8 @@ export const variables = {
   solanaColor: '#14F195',
   jitoColor: '#FF6B6B',
   jupiterColor: '#F5A623',
+  timefunColor: '#FF9EC5',
+  soltrendioColor: '#7B72A5',
   overlayBackground: 'rgba(0,0,0,0.7)',
   canvasBackground: '#000000',
   linkHoverColor: '#2B6CB0',

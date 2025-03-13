@@ -25,6 +25,9 @@ import bundleLogo from '../../images/bundle.svg';
 import swapLogo from '../../images/ia.svg'
 import piLogo from '../../images/redpi.svg';
 import convertLogo from '../../images/bitcoin.svg';
+import timefunLogo from '../../images/timefun.jpg';
+import soltrendioLogo from '../../images/soltrendio.png';
+import retardioLogo from '../../images/retardio.png';
 // const moonLogo = require('../../images/moon.svg');
 // const groundfloor = require('../../images/house.svg');
 
@@ -44,11 +47,14 @@ export default function LinkTree() {
         <Button link='https://github.com/jongan69' icon={<GitHubIcon />} name='' backgroundcolor={variables.githubColor} />
         <Button link='https://twitter.com/jongan69' icon={<Image src={twitterLogo} alt="Twitter" height={h} />} name='' backgroundcolor={variables.twitterColor} />
         <Button link='https://t.me/jonngan' icon={<Image src={telegramLogo} height={h} alt="Telegram" />} name='' backgroundcolor={variables.opt1Color} />
+        <Button link='https://time.fun?ref=lockin' icon={<Image src={timefunLogo} height={h} alt="Time.fun" />} name='' backgroundcolor={variables.timefunColor} />
         <Button link='https://kick.com/jonngan' icon={<Image src={kickLogo} height={h} alt="Kick" />} name='' backgroundcolor={variables.opt1Color} />
-
+        
         {/* Referral Links Section */}
         <Section>
           <SectionHeader>Projects</SectionHeader>
+          <Button link='https://apps.apple.com/us/app/soltrendio-trends/id6742119975' icon={<Image src={soltrendioLogo} height={h} alt="SolTrendio WatchOS App" />} name='SolTrendio WatchOS App' backgroundcolor={variables.linkedinColor} />
+          <Button link='https://www.retardio.exposed/' icon={<Image src={retardioLogo} height={h} alt="Retardio Exposed" />} name='Retardio Exposed' backgroundcolor={variables.linkedinColor} />
           <Button link={'https://InvestAssist.app/'} icon={<Image src={swapLogo} height={h} alt="AI Investment Assistance" />} name='AI Market Analysis' backgroundcolor={variables.linkedinColor} />
           <Button link={'https://Soltrendio.com/'} icon={<Image src={trading} height={h} alt="Solana AI Wallet Analysis" />} name='Solana AI Wallet Analysis' backgroundcolor={variables.linkedinColor} />
           <Button link={'https://lotto.cooking/'} icon={<Image src={lottoLogo2} height={h} alt="Solana OnChain VRF Lottery" />} name='Solana OnChain VRF Lottery' backgroundcolor={variables.linkedinColor} />
