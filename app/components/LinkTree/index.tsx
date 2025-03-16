@@ -45,7 +45,7 @@ export default function LinkTree() {
         <Button link='https://jonngan.medium.com' icon={<Image src={mediumLogo} height={h} alt="Medium" />} name='' backgroundcolor={variables.gray600} />
         <Button link='https://www.youtube.com/@jonngan?sub_confirmation=1' icon={<PlayCircleFilledWhiteIcon />} name='' backgroundcolor={variables.youtubeColor} />
         <Button link='https://github.com/jongan69' icon={<GitHubIcon />} name='' backgroundcolor={variables.githubColor} />
-        <Button link='https://twitter.com/jongan69' icon={<Image src={twitterLogo} alt="Twitter" height={h} />} name='' backgroundcolor={variables.twitterColor} />
+        <Button link='https://twitter.com/lockinfaggot' icon={<Image src={twitterLogo} alt="Twitter" height={h} />} name='' backgroundcolor={variables.twitterColor} />
         <Button link='https://t.me/jonngan' icon={<Image src={telegramLogo} height={h} alt="Telegram" />} name='' backgroundcolor={variables.opt1Color} />
         <Button link='https://time.fun?ref=lockin' icon={<Image src={timefunLogo} height={h} alt="Time.fun" />} name='' backgroundcolor={variables.timefunColor} />
         <Button link='https://kick.com/jonngan' icon={<Image src={kickLogo} height={h} alt="Kick" />} name='' backgroundcolor={variables.opt1Color} />
