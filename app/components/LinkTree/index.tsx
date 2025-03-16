@@ -55,7 +55,7 @@ export default function LinkTree() {
         {/* Referral Links Section */}
         <Section>
           <SectionHeader>Projects</SectionHeader>
-          <Button link={'https://InvestAssist.app/'} icon={<Image src={swapLogo} height={h} alt="AI Investment Assistance" />} name='AI Market Analysis' backgroundcolor={variables.linkedinColor} />
+          <Button link={'https://InvestAssist.app/learn'} icon={<Image src={swapLogo} height={h} alt="AI Investment Assistance" />} name='AI Market Analysis' backgroundcolor={variables.linkedinColor} />
           <Button link='https://apps.apple.com/us/app/soltrendio-trends/id6742119975' icon={<Image src={soltrendioLogo} height={h} alt="SolTrendio WatchOS App" />} name='SolTrendio WatchOS App' backgroundcolor={variables.linkedinColor} />
           <Button link={'https://Soltrendio.com/'} icon={<Image src={trading} height={h} alt="Solana AI Wallet Analysis" />} name='Solana AI Wallet Analysis' backgroundcolor={variables.linkedinColor} />
           <Button link={'https://www.lock.wtf/'} icon={<Image src={bundleLogo} height={h} alt="Jito Bundled Jupiter Swaps" />} name='Jito Bundled Jupiter Swaps' backgroundcolor={variables.linkedinColor} />
